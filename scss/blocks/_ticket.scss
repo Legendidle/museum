@@ -1,0 +1,141 @@
+.ticket{
+  background-image: url(/img/parallax.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100% 800px;
+  padding-bottom: 200px;
+}
+.ticket__title{
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9D8665;
+}
+.ticket__title::after{
+  content: "";
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 75px;
+  width: 100%;
+  height: 3px;
+  background-color: #710707;
+}
+.ticket__inner{
+  display: flex;
+  margin-bottom: 100px;
+}
+.ticket__type{
+  margin-bottom: 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+}
+.ticket__form{
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.ticket__label{
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+.ticket__label p{
+  margin-left: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
+.ticket__age{
+  display: block;
+  margin-bottom: 15px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  margin-top: 20px;
+}
+.ticket__account{
+  padding-bottom: 30px;
+}
+.ticket__account p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+  margin-top: 0;
+}
+.ticket__type{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000; 
+}
+.ticket__header{
+  display: flex;
+}
+.ticket__account{
+  margin-left: auto;
+}
+.ticket__price{
+  margin-top: 30px !important;
+}
+.ticket__btn{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  background-color: #000000;
+  padding: 10px 38px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width:1024px){
+  form{
+    display: none;
+  }
+}
+
+@media (max-width:768px){
+  .ticket__header{
+    display: flex;
+    flex-direction: column;
+  }
+  .ticket__account{
+   margin: 0 auto;
+   text-align: center;
+   
+  }
+  .ticket{
+    background-position: 100% 100%;
+  }
+}
+
+@media (max-width:420px){
+  .ticket__title{
+    font-size: 45px;
+  }
+}
